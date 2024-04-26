@@ -1,0 +1,29 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^30.0.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "productName": "OpenCounter",
+    "appId": "com.opencounter",
+    "mac": {
+      "icon": "open-timer-icon.icns"
+    },
+    "win": {
+      "icon": "open-timer-icon.ico"
+    }
+  }
+}
