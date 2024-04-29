@@ -1,7 +1,9 @@
 @font-face {
-    font-family: Micro5;
+    font-family: Minecraft;
     font-weight: 400;
-    src: url("./fonts/Micro5/Micro5-Regular.ttf");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    src: url("./fonts/Minecraft/Minecraft.ttf");
 }
 
 body {
@@ -10,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    height: 15rem;
+    padding-bottom: 20rem;
     background-color: #2D3250;
     padding: 1rem;
     -webkit-app-region: no-drag;
@@ -41,8 +45,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: Micro5;
-    font-size: 2rem;
+    font-family: Minecraft;
+    font-size: 1.5rem;
     text-align: center;
     color: #2D3250;
     border-color: #7077A1;
@@ -60,7 +64,6 @@ body {
 }
 
 #close-button:hover {
-
     background-color: #ff6060;
     border-color: #ff6060;
     transition: 0.2s;
@@ -68,9 +71,9 @@ body {
 
 .counter {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    height: 13rem;
+    height: 100%;
     width: 100%;
     margin-top: 2.2rem;
     transition: all 0.3s ease;
@@ -101,24 +104,19 @@ body {
 }
 
 .counter-child:hover {
-    border-color: #F6B17A;
-    transition: 0.2s ease-in;
-}
-
-p {
-    color: #7077A1;
-    font-family: Micro5;
-    font-size: 3rem;
-    margin: 0;
+    background-color: #7077A1;
+    color: #2D3250;
+    transition: 0.2s;
 }
 
 input {
     color: #7077A1;
-    font-family: Micro5;
-    font-size: 3rem;
+    font-family: Minecraft;
+    font-size: 2.5rem;
     overflow: hidden;
     margin: 0;
     stroke-linecap: unset;
+    transition: 0.2s;
 }
 
 input:focus {
@@ -147,9 +145,15 @@ input:focus {
     padding-left: 1rem;
     padding-right: 1rem;
     color: #7077A1;
-    font-family: Micro5;
-    font-size: 3rem;
+    font-family: Minecraft;
+    font-size: 1.5rem;
     height: 100%;
+}
+
+.menu-button:hover {
+    background-color: #7077A1;
+    color: #2D3250;
+    transition: 0.2s;
 }
 
 .hidden {

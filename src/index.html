@@ -10,15 +10,12 @@
       <button id="close-button"></button>
     </div>
     <div class="counter" id="timer-container">
-      <div class="counter-child" id="number-container">
-        <p id="timer">0</p>
-      </div>
+      <input type="number" id="timer" class="counter-child" value="0">
       <div class="counter-child" id="menu-container">
-        <button id="backward-button" class="menu-button"><</button>
+        <button id="backward-button" class="menu-button"><<</button>
         <button id="time-control-button" class="menu-button">Start</button>
-        <button id="forward-button" class="menu-button">></button>
+        <button id="forward-button" class="menu-button">>></button>
       </div>
-      <input type="number" id="time-input" class="counter-child" value="0">
     </div>
     <script src="./renderer/renderer.js"></script>
   </body>
